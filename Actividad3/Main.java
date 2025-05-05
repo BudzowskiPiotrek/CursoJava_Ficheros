@@ -37,7 +37,7 @@ public class Main {
                 System.out.println("no exito");
             }
         }
-        sn.close();
+        sn.close(); // sino no esta verde!
     }
 
 }
