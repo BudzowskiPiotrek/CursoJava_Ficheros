@@ -11,8 +11,10 @@ public class Main {
             String linea;
             StringBuilder documentoNuevo = new StringBuilder();
             while ((linea = bufferedReader.readLine()) != null) {
+                // SI LA LINEA NO TIENE "//" LA COPIA IGUAL
                 if (!linea.contains("//")) {
                     documentoNuevo.append(linea + "\n");
+                    // SI LA TENDRIA LA LOCALIZO Y LA COPIO HASTA EL "//"
                 } else {
                     linea = linea.substring(0, linea.indexOf("//"));
                 }
