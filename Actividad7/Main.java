@@ -17,14 +17,12 @@ public class Main {
         rellenarArchivo("dos.txt", "2");
         crearArchivoConjunto();
     }
-    
 
     // METODO PARA CREAR TERCER ARCHIVO Y MEZCLAR AMBOS ARCHIVOS
     private static void crearArchivoConjunto() {
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("uno.txt"));
-            BufferedReader bufferedReaderDos = new BufferedReader(new FileReader("dos.txt"));
-            FileWriter archivoTres = new FileWriter("tres.txt");
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("uno.txt"));
+                BufferedReader bufferedReaderDos = new BufferedReader(new FileReader("dos.txt"));
+                FileWriter archivoTres = new FileWriter("tres.txt")) {
 
             String[] texto = new String[60];
             String linea;
@@ -42,10 +40,6 @@ public class Main {
                 archivoTres.write(texto[j] + "\n");
             }
 
-            bufferedReader.close();
-            bufferedReaderDos.close();
-            archivoTres.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,15 +48,13 @@ public class Main {
     // METODO PARA RELLENAR ARCHIVO DE 20 LINEAS DE NUMERO QUE PIDES AL ARCHIVO QUE
     // PIDES
     private static void rellenarArchivo(String nombre, String numero) {
-        try {
-            FileWriter archivo = new FileWriter(nombre);
+        try (FileWriter archivo = new FileWriter(nombre)) {
             for (int i = 0; i < 20; i++) {
                 for (int j = 0; j < 20; j++) {
                     archivo.write(numero); // EN CASO DE QUERRER INGRESAR EL NUMERO HAY QUE HACER VALUEOFSTRING
                 }
                 archivo.write("\n");
             }
-            archivo.close();  
         } catch (IOException e) {
             e.printStackTrace();
         }
