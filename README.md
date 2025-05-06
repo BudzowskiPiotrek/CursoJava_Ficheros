@@ -1,4 +1,4 @@
-# CursoJava_Ficheros 📘💻
+# CursoJava - Ficheros 📘💻
 
 ## Actividades ✍️📂
 1. 📝 Crea un programa que permita al usuario crear un archivo y un directorio. El programa debe solicitar al usuario el nombre del archivo y del directorio y luego crear ambos en el sistema de archivos.
@@ -20,35 +20,22 @@
 6. 🗂️ Crea un programa java que cree un fichero con nombre primos.dat
     - los números primos que hay entre el 1 y el 500.
     - Añade un método al programa anterior que lea y muestre los números en la consola.
+
 7. ✏️ Crea un fichero llamado uno.txt el contenido del fichero serán 20 líneas de 20 numeros con el número 1.
     - Crea un fichero llamado dos.txt el contenido del fichero serán 30 líneas de 30 números 2.
     - Teniendo en cuenta que no conocemos la longitud de los ficheros anteriores crea un fichero que sea el resultado de la mezcla de ambos ficheros.
     - El fichero deberá quedar así:
-> 11111111111111111111
-> 
-> 
-> 222222222222222222222222222222
-> 
-> 11111111111111111111
-> 
-> 222222222222222222222222222222
-> 
-> 11111111111111111111
-> 
-> 222222222222222222222222222222
-> 
-> …
-> 
-> …
-> 
-> …
-> 
-> 222222222222222222222222222222
-> 
-> 222222222222222222222222222222
-> 
-> 222222222222222222222222222222
->
+      
+        > 11111111111111111111
+        >  
+        > 222222222222222222222222222222
+        > 
+        > 11111111111111111111
+        > 
+        > 222222222222222222222222222222
+
+8.  📝  Crea un proyecto en java con una clase Estudiantes con varios atributos, con todos los setters y getters y toString,  comenta delante de cada método que función tiene (comentario con //) . En el main crea un método que elimine los comentarios de la clase Estudiante.java
+
 
 
    
