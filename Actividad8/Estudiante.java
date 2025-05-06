@@ -4,7 +4,7 @@ public class Estudiante {
     String nombre;
     String apellido;
     int edad;
-    
+
     // EL CONSTRUCTOR.
     public Estudiante(String nombre, String apellido, int edad) {
         this.nombre = nombre;
@@ -13,7 +13,7 @@ public class Estudiante {
     }
 
     // SETER DE NOMBRE.
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre) {// dsdsadas
         this.nombre = nombre;
     }
 
@@ -22,17 +22,17 @@ public class Estudiante {
         this.apellido = apellido;
     }
 
-    //SETES DE EDAD.
+    // SETES DE EDAD.
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
-    //GETER DE NOMBRE.
+    // GETER DE NOMBRE.
     public String getNombre() {
         return nombre;
     }
 
-    //GETES DE APELLIDO.
+    // GETES DE APELLIDO.
     public String getApellido() {
         return apellido;
     }
@@ -42,7 +42,7 @@ public class Estudiante {
         return edad;
     }
 
-    //METODO TO STRING.
+    // METODO TO STRING.
     @Override
     public String toString() {
         return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + "]";

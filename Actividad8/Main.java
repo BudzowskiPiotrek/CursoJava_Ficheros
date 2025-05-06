@@ -16,7 +16,7 @@ public class Main {
                     documentoNuevo.append(linea + "\n");
                     // SI LA TENDRIA LA LOCALIZO Y LA COPIO HASTA EL "//"
                 } else {
-                    linea = linea.substring(0, linea.indexOf("//"));
+                    documentoNuevo.append(linea.substring(0, linea.indexOf("//"))+"\n");
                 }
             }
             System.out.println(documentoNuevo);
