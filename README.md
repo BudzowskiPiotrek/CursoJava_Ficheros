@@ -1,4 +1,4 @@
-# CursoJava_Ficheros 📘💻
+# CursoJava - Ficheros 📘💻
 
 ## Actividades ✍️📂
 1. 📝 Crea un programa que permita al usuario crear un archivo y un directorio. El programa debe solicitar al usuario el nombre del archivo y del directorio y luego crear ambos en el sistema de archivos.
