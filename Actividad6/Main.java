@@ -40,7 +40,7 @@ public class Main {
                     }
                 }
                 if (esPrimo) {
-                    miArchivo.write(i+" ");
+                    miArchivo.write(i + " ");
                 }
             }
             miArchivo.close();
