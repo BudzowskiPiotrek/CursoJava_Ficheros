@@ -13,8 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
         inicialArchivo();
-        rellenarArchivo("uno.txt", "1");
-        rellenarArchivo("dos.txt", "2");
+        rellenarArchivo("uno.txt", "1", 20);
+        rellenarArchivo("dos.txt", "2", 30);
         crearArchivoConjunto();
     }
 
@@ -39,7 +39,7 @@ public class Main {
             for (int j = 0; j < texto.length; j++) {
                 archivoTres.write(texto[j] + "\n");
             }
-
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -47,9 +47,9 @@ public class Main {
 
     // METODO PARA RELLENAR ARCHIVO DE 20 LINEAS DE NUMERO QUE PIDES AL ARCHIVO QUE
     // PIDES
-    private static void rellenarArchivo(String nombre, String numero) {
+    private static void rellenarArchivo(String nombre, String numero, int cuanto) {
         try (FileWriter archivo = new FileWriter(nombre)) {
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < cuanto; i++) {
                 for (int j = 0; j < 20; j++) {
                     archivo.write(numero); // EN CASO DE QUERRER INGRESAR EL NUMERO HAY QUE HACER VALUEOFSTRING
                 }
